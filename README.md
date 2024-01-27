@@ -1,1 +1,1 @@
-BehaviorTree -> Assets -> Scenes -> SampleScene
+BehaviorTree -> Assets -> Scenes -> SampleScene or Main
