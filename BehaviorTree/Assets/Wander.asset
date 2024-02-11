@@ -40,7 +40,7 @@ MonoBehaviour:
     id=\"7\" />\r\n          <RepeatDecorator id=\"9\" />\r\n          <ConditionNode
     id=\"11\" />\r\n          <ActionNode id=\"13\" />\r\n        </nodes>\r\n     
     </_nodes>\r\n    </BehaviorTree>\r\n    <ActionNode id=\"13\">\r\n      <_data>\r\n       
-    <data breakpoint=\"0\" selected=\"True\" position=\"743.3887 779.4166\" name=\"Navigation/MoveToGameObject\"
+    <data breakpoint=\"0\" selected=\"False\" position=\"645.8887 664.6666\" name=\"Navigation/MoveToGameObject\"
     description=\"Moves the game object towards a given target by using a NavMeshAgent\"
     cardinality=\"0\" hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n         
     <ActionNode id=\"13\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n 
@@ -71,31 +71,34 @@ MonoBehaviour:
     id=\"0\" policy=\"ATOMIC_CHECK\" name=\"Perception/IsTargetClose\">\r\n     
     <inputParams />\r\n      <outputParams />\r\n      <localParams />\r\n    </ConditionEvalNode>\r\n 
     </runtimeInfo>\r\n  <editorInfo>\r\n    <ActionNode id=\"5\">\r\n      <_data>\r\n       
-    <data breakpoint=\"0\" selected=\"False\" position=\"476.8889 725.5554\" name=\"Navigation/MoveToPosition\"
+    <data breakpoint=\"0\" selected=\"False\" position=\"376.3889 569.8054\" name=\"Navigation/MoveToPosition\"
     description=\"Moves the game object to a given position by using a NavMeshAgent\"
     cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n         
     <ActionNode id=\"5\" />\r\n          <SequenceNode id=\"7\" />\r\n        </data>\r\n     
     </_data>\r\n    </ActionNode>\r\n    <ActionNode id=\"6\">\r\n      <_data>\r\n       
-    <data breakpoint=\"0\" selected=\"False\" position=\"1025.889 717.1111\" name=\"Vector3/GetRandomInArea\"
+    <data breakpoint=\"0\" selected=\"False\" position=\"1012.389 598.3611\" name=\"Vector3/GetRandomInArea\"
     description=\"Gets a random position from a given area\" cardinality=\"0\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <ActionNode id=\"6\" />\r\n          <SequenceNode
     id=\"7\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n   
     <SequenceNode id=\"7\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"673.2227 523.3333\" name=\"Sequence\" description=\"Executes all its
+    position=\"659.7227 404.5833\" name=\"Sequence\" description=\"Executes all its
     children in sequence until all of them are successful\" cardinality=\"-1\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <SequenceNode id=\"7\" />\r\n         
     <RepeatDecorator id=\"9\" />\r\n        </data>\r\n      </_data>\r\n    </SequenceNode>\r\n   
     <RepeatDecorator id=\"9\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
-    selected=\"False\" position=\"686.667 363.4167\" name=\"Repeat\" description=\"Repeats
+    selected=\"False\" position=\"673.167 244.6667\" name=\"Repeat\" description=\"Repeats
     the execution of its child node\" cardinality=\"1\" hasParent=\"False\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <RepeatDecorator id=\"9\" />\r\n       
     </data>\r\n      </_data>\r\n    </RepeatDecorator>\r\n    <ConditionNode id=\"11\">\r\n     
-    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"741.5
-    688.75\" name=\"Perception/IsTargetClose\" description=\"Checks whether a target
-    is close depending on a given distance\" cardinality=\"0\" hasParent=\"True\">\r\n         
+    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"647 564\"
+    name=\"Perception/IsTargetClose\" description=\"Checks whether a target is close
+    depending on a given distance\" cardinality=\"0\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <ConditionNode id=\"11\" />\r\n         
-    <SequenceNode id=\"7\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionNode>\r\n 
-    </editorInfo>\r\n</BehaviorBricks>"
-  zoom: 0.9
+    <SequenceNode id=\"7\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionNode>\r\n   
+    <ConditionEvalNode id=\"0\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
+    selected=\"False\" position=\"0 0\" name=\"AlwaysTrue\" description=\"Eval\"
+    cardinality=\"1\" hasParent=\"False\">\r\n          <ConditionEvalNode id=\"0\"
+    />\r\n        </data>\r\n      </_data>\r\n    </ConditionEvalNode>\r\n  </editorInfo>\r\n</BehaviorBricks>"
+  zoom: 1
   subslist: []
   _guid: 85bd8e9b7a26b4741a467fa1498545ac
