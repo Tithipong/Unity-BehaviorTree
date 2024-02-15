@@ -15,7 +15,7 @@ MonoBehaviour:
   brickName: Assets/Click&Go.asset
   xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
     version=\"1.0\">\r\n  <BehaviorTree id=\"0\" />\r\n  <runtimeInfo>\r\n    <BehaviorTree
-    id=\"0\" guid=\"8561841c42fce2441a2fbcb0ae00794e\" nextId=\"7\">\r\n      <root>\r\n       
+    id=\"0\" guid=\"8561841c42fce2441a2fbcb0ae00794e\" nextId=\"8\">\r\n      <root>\r\n       
     <RepeatDecorator id=\"6\" />\r\n      </root>\r\n      <inputParams>\r\n       
     <inputValues>\r\n          <entry name=\"mask\" type=\"UnityEngine.LayerMask\"
     isBlackboard=\"False\" />\r\n          <entry name=\"camera\" type=\"UnityEngine.Camera\"
@@ -49,7 +49,7 @@ MonoBehaviour:
     <inputValues>\r\n          <entry name=\"target\" type=\"UnityEngine.Vector3\"
     isBlackboard=\"True\" blackboard=\"selectedPosition\" />\r\n        </inputValues>\r\n     
     </inputParams>\r\n      <outputParams />\r\n      <localParams />\r\n    </ActionNode>\r\n   
-    <ConditionEvalNode id=\"0\" policy=\"ATOMIC_CHECK\" name=\"Basic/CheckMouseButton\">\r\n     
+    <ConditionEvalNode id=\"0\" policy=\"ATOMIC_CHECK\" name=\"AlwaysTrue\">\r\n     
     <inputParams />\r\n      <outputParams />\r\n      <localParams />\r\n    </ConditionEvalNode>\r\n 
     </runtimeInfo>\r\n  <editorInfo>\r\n    <BehaviorTree id=\"0\" _name=\"Click&amp;Go\"
     _description=\"\" _removeIfClosed=\"False\">\r\n      <_rootList>\r\n       
@@ -66,23 +66,23 @@ MonoBehaviour:
     the execution of its child node\" cardinality=\"1\" hasParent=\"False\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <RepeatDecorator id=\"6\" />\r\n       
     </data>\r\n      </_data>\r\n    </RepeatDecorator>\r\n    <SequenceNode id=\"5\">\r\n     
-    <_data>\r\n        <data breakpoint=\"0\" selected=\"True\" position=\"696 447\"
+    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"696 447\"
     name=\"Sequence\" description=\"Executes all its children in sequence until all
     of them are successful\" cardinality=\"-1\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <SequenceNode id=\"5\" />\r\n         
     <RepeatDecorator id=\"6\" />\r\n        </data>\r\n      </_data>\r\n    </SequenceNode>\r\n   
-    <ConditionNode id=\"1\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"388 662\" name=\"Basic/CheckMouseButton\" description=\"Checks whether
+    <ConditionNode id=\"1\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"True\"
+    position=\"266 664\" name=\"Basic/CheckMouseButton\" description=\"Checks whether
     a mouse button is pressed\" cardinality=\"0\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <ConditionNode id=\"1\" />\r\n         
     <SequenceNode id=\"5\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionNode>\r\n   
     <ActionNode id=\"2\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"650 652\" name=\"Physics/FromMouseToWorld\" description=\"Gets the
+    position=\"538 664\" name=\"Physics/FromMouseToWorld\" description=\"Gets the
     game object and position that is under the mouse cursor\" cardinality=\"0\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <ActionNode id=\"2\" />\r\n          <SequenceNode
     id=\"5\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n   
     <ActionNode id=\"4\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"896 651\" name=\"Navigation/MoveToPosition\" description=\"Moves the
+    position=\"790 661\" name=\"Navigation/MoveToPosition\" description=\"Moves the
     game object to a given position by using a NavMeshAgent\" cardinality=\"0\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <ActionNode id=\"4\" />\r\n          <SequenceNode
     id=\"5\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n   
